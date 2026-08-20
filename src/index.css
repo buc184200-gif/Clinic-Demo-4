@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-oculis-navy: #0B0B0A;
+  --color-oculis-surface: #141310;
+  --color-oculis-white: #F3EFE7;
+  --color-oculis-silver: #A9A196;
+  --color-oculis-cyan: #B9985A;
+  --color-oculis-blue: #D6C29A;
+  --color-oculis-lavender: #E7DED0;
+
+  --font-manrope: "Manrope", sans-serif;
+  --font-serif: "Instrument Serif", serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--color-oculis-navy);
+  color: var(--color-oculis-white);
+  font-family: var(--font-manrope);
+}
